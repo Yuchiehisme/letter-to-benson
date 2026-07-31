@@ -2,74 +2,259 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>A Letter to Benson</title>
 
+
 <style>
 
-body{
-    margin:0;
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    background:#f3f8ff;
-    font-family:Georgia,"Times New Roman",serif;
+* {
+    box-sizing: border-box;
 }
 
-.container{
-    text-align:center;
-}
 
-h1{
-    font-size:48px;
-    font-weight:normal;
-    margin-bottom:15px;
-}
+body {
 
-p{
-    color:#666;
-    margin-bottom:60px;
-    line-height:1.8;
-}
+    margin: 0;
 
-a{
+    height: 100vh;
 
-    text-decoration:none;
-    color:#222;
-    font-size:22px;
-    padding-bottom:8px;
-    border-bottom:1px solid #999;
+    display: flex;
 
-    transition:.3s;
+    justify-content: center;
+
+    align-items: center;
+
+    background: #f3f8ff;
+
+    color: #222;
+
+    font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+
+    overflow: hidden;
 
 }
 
-a:hover{
 
-    letter-spacing:2px;
 
-    border-color:#222;
+.container {
+
+    width: 90%;
+
+    max-width: 700px;
+
+    text-align: center;
+
+    animation: fadeIn 1.5s ease;
 
 }
+
+
+
+h1 {
+
+    margin: 0;
+
+    font-size: clamp(36px, 7vw, 64px);
+
+    font-weight: 500;
+
+    letter-spacing: -1px;
+
+    line-height: 1.15;
+
+}
+
+
+
+.subtitle {
+
+    margin-top: 25px;
+
+    font-size: clamp(16px, 3vw, 22px);
+
+    color: #777;
+
+    letter-spacing: 1px;
+
+}
+
+
+
+.open {
+
+    display: inline-block;
+
+    margin-top: 70px;
+
+    position: relative;
+
+    text-decoration: none;
+
+    color: #222;
+
+    font-size: clamp(18px, 3vw, 22px);
+
+    padding-bottom: 10px;
+
+    transition: 0.4s;
+
+}
+
+
+
+.open::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+
+    bottom: 0;
+
+    width: 0;
+
+    height: 1px;
+
+    background: #222;
+
+    transform: translateX(-50%);
+
+    transition: 0.4s;
+
+}
+
+
+
+.open:hover::after {
+
+    width: 100%;
+
+}
+
+
+
+.open:hover {
+
+    letter-spacing: 2px;
+
+}
+
+
+
+
+@keyframes fadeIn {
+
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(30px);
+
+    }
+
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+
+
+@media(max-width:600px){
+
+
+    body {
+
+        padding: 20px;
+
+    }
+
+
+    .container {
+
+        width: 100%;
+
+    }
+
+
+    h1 {
+
+        font-size: 38px;
+
+        line-height: 1.2;
+
+    }
+
+
+    .subtitle {
+
+        margin-top: 20px;
+
+        font-size: 16px;
+
+    }
+
+
+    .open {
+
+        margin-top: 55px;
+
+        font-size: 18px;
+
+    }
+
+
+}
+
 
 </style>
 
+
 </head>
+
+
 
 <body>
 
+
 <div class="container">
 
-<h1>A Letter to Benson</h1>
 
-<a href="letter.html">
-Open if you're a big fan of Jayson Tatum over Stephen Curry lol
+<h1>
+A Letter<br>
+to Benson
+</h1>
+
+
+<div class="subtitle">
+Summer 2026
+</div>
+
+
+<a class="open" href="letter.html">
+Open Letter
 </a>
 
+
 </div>
+
 
 </body>
 
