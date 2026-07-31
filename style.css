@@ -13,7 +13,6 @@ body {
 }
 
 
-
 .letter {
 
     max-width: 750px;
@@ -29,7 +28,6 @@ body {
     transition: 1s;
 
 }
-
 
 
 .show {
@@ -106,81 +104,27 @@ footer {
 
 
 
-/* Photo section */
-
-.photo {
-
-    margin-top: 70px;
-
-    text-align: center;
-
-}
-
-
-
-.photo img {
-
-    width: 100%;
-
-    max-width: 500px;
-
-    height: auto;
-
-    display: block;
-
-    margin: 0 auto;
-
-    border-radius: 12px;
-
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-
-}
-
-
-
-.photo p {
-
-    margin-top: 15px;
-
-    color: #777;
-
-    font-size: 15px;
-
-    font-style: italic;
-
-}
-
-
-
 @media(max-width:600px){
-
 
     .letter {
 
-        margin: 40px auto;
+        margin:40px auto;
 
-        padding: 0 20px;
+        padding:0 20px;
 
     }
 
 
     h1 {
 
-        font-size: 30px;
+        font-size:30px;
 
     }
 
 
     .content {
 
-        font-size: 16px;
-
-    }
-
-
-    .photo img {
-
-        max-width: 100%;
+        font-size:16px;
 
     }
 
