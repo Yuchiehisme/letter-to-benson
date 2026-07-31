@@ -1,130 +1,31 @@
-body{
+.photo {
 
-margin:0;
+    margin-top: 60px;
 
-background:white;
-
-color:#222;
-
-font-family:
-Georgia,
-"Times New Roman",
-serif;
-
-line-height:1.9;
+    text-align: center;
 
 }
 
+.photo img {
 
-.letter{
+    width: 100%;
 
-max-width:750px;
+    max-width: 450px;
 
-margin:80px auto;
+    border-radius: 12px;
 
-padding:0 25px;
-
-opacity:0;
-
-transform:translateY(20px);
-
-transition:1s;
+    box-shadow: 0 10px 25px rgba(0,0,0,.15);
 
 }
 
+.photo p {
 
-.show{
+    color: #777;
 
-opacity:1;
+    font-size: 15px;
 
-transform:translateY(0);
+    margin-top: 15px;
 
-}
-
-
-
-h1{
-
-text-align:center;
-
-font-weight:normal;
-
-font-size:40px;
-
-}
-
-
-
-.date{
-
-text-align:center;
-
-color:#777;
-
-margin-bottom:60px;
-
-}
-
-
-
-.content{
-
-font-size:18px;
-
-}
-
-
-
-.content p{
-
-margin-bottom:28px;
-
-}
-
-
-
-.special{
-
-text-align:center;
-
-font-size:24px;
-
-margin:50px 0;
-
-}
-
-
-
-footer{
-
-margin-top:60px;
-
-font-size:18px;
-
-}
-
-
-
-@media(max-width:600px){
-
-.letter{
-
-margin:40px auto;
-
-}
-
-
-h1{
-
-font-size:30px;
-
-}
-
-
-.content{
-
-font-size:16px;
-
-}
+    font-style: italic;
 
 }
